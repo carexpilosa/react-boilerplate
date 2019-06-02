@@ -1,5 +1,4 @@
 import React from 'react';
-
 import Sub from './Sub';
 
 class Super extends React.Component {
@@ -20,7 +19,7 @@ class Super extends React.Component {
           onInputChange={this._subOnInputChange.bind(this)}
           counter={this.state.textlength}
         />
-        <img src={require('./files/buche.jpeg')} />
+        <img src={require('./files/buche.jpeg')} alt='Buche' />
         <div>{this.state.text}</div>
       </div>
     );
