@@ -8,7 +8,7 @@ class Super extends React.Component {
     this.state = {
       text: '',
       textlength: 0
-    }
+    };
   }
 
   render() {
@@ -16,8 +16,12 @@ class Super extends React.Component {
     return (
       <div>
         <h3>Super</h3>
-        <Sub onInputChange={this._subOnInputChange.bind(this)} counter={this.state.textlength} />
-        <div>{ this.state.text }</div>
+        <Sub
+          onInputChange={this._subOnInputChange.bind(this)}
+          counter={this.state.textlength}
+        />
+        <img src={require('./files/buche.jpeg')} />
+        <div>{this.state.text}</div>
       </div>
     );
   }
@@ -27,7 +31,7 @@ class Super extends React.Component {
     this.setState({
       text: e.target.value,
       textlength: e.target.value.length
-    })
+    });
   }
 }
 
