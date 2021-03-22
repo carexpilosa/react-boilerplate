@@ -16,7 +16,7 @@ class Sub extends React.Component {
       <div>
         <h3>Sub</h3>
         <input type="text" onChange={this.props.onInputChange} />
-        <div>{ this.props.counter }</div>
+        <div className="oneHight">{this.props.counter }</div>
       </div>
     );
   }

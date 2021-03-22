@@ -19,8 +19,8 @@ class Super extends React.Component {
           onInputChange={this._subOnInputChange.bind(this)}
           counter={this.state.textlength}
         />
+        <div style={{height: '1em'}}>{this.state.text}</div>
         <img src={require('./files/buche.jpeg')} alt='Buche' />
-        <div>{this.state.text}</div>
       </div>
     );
   }
